@@ -13,7 +13,7 @@ const App = () => (
     <TooltipProvider delayDuration={0}>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/my-cv-website"> {/* Added basename here */}
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
