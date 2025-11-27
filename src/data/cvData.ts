@@ -77,6 +77,7 @@ export const cvData = {
     ],
     tools: [
       { name: "VS Code", level: "intermediate" },
+      { name: "Conda", level: "beginner" },
     ],
     data: [ // New category for data-related skills
       { name: "SQL", level: "intermediate" },
