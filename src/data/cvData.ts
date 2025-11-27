@@ -101,11 +101,11 @@ export const cvData = {
   },
   projects: [
     {
-      title: "Volatilty estimation website",
+      title: "IBEX 35 Volatility Analysis Tool",
       description: [
         "A website that allows users to estimate the daily volatility of any IBEX 35 company using GARCH or Stochastic Volatility models. The site is fully developed in Shiny for R"
       ],
-      technologies: ["Rstudio", "Shiny"], // Fixed the missing double quote here
+      technologies: ["Rstudio", "Shiny"],
       liveLink: "https://davidveloso.shinyapps.io/estimacin_volatilidad/",
     },
     {
