@@ -1,17 +1,74 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
+import React from "react";
+import { cvData } from "@/data/cvData";
+import Header from "@/components/Header";
+import Section from "@/components/Section";
+import ExperienceCard from "@/components/ExperienceCard";
+import ProjectCard from "@/components/ProjectCard";
+import SkillBadge from "@/components/SkillBadge";
+import Footer from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
-const Index = () => {
+const Index: React.FC = () => {
+  const { summary, experience, education, skills, projects } = cvData;
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+        <Header />
+
+        <main>
+          <Section title="About Me">
+            <p className="text-lg leading-relaxed">{summary}</p>
+          </Section>
+
+          <Section title="Experience">
+            {experience.map((exp, index) => (
+              <ExperienceCard key={index} {...exp} />
+            ))}
+          </Section>
+
+          <Section title="Education">
+            {education.map((edu, index) => (
+              <ExperienceCard
+                key={index}
+                title={edu.degree}
+                company={edu.institution}
+                duration={edu.duration}
+                description={[edu.description]}
+                technologies={[]} // Education typically doesn't have technologies in the same way as work experience
+              />
+            ))}
+          </Section>
+
+          <Section title="Skills">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {Object.entries(skills).map(([category, skillList]) => (
+                <div key={category} className="bg-muted p-4 rounded-lg shadow-sm">
+                  <h3 className="text-lg font-semibold mb-3 capitalize text-muted-foreground">
+                    {category}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skillList.map((skill, index) => (
+                      <SkillBadge key={index} skill={skill} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Section>
+
+          <Section title="Projects">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </div>
+          </Section>
+        </main>
+
+        <Footer />
+        <MadeWithDyad />
       </div>
-      <MadeWithDyad />
     </div>
   );
 };
