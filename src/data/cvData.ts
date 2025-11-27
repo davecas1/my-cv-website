@@ -51,7 +51,7 @@ export const cvData = {
       description: "Specialized in Information Systems.",
     },
     {
-      degree: "Web Application development",
+      degree: "Web Application Development Program",
       institution: "Labora",
       duration: "Dec 2022 - Aug 2023",
       description: "I learned JavaScript, TypeScript, React, Node.js, CSS, HTML and PHP",
