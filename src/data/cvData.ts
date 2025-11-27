@@ -86,7 +86,7 @@ export const cvData = {
       { name: "VS Code", level: "intermediate" },
       { name: "Conda", level: "beginner" },
     ],
-    data: [ // New category for data-related skills
+    data: [
       { name: "SQL", level: "intermediate" },
       { name: "Data Analysis", level: "advanced" },
       { name: "ETL", level: "intermediate" },
@@ -109,18 +109,16 @@ export const cvData = {
       liveLink: "https://davidveloso.shinyapps.io/estimacin_volatilidad/",
     },
     {
-      title: "Personal Portfolio Website",
+      title: "Best route for the Fallas festival in Valencia.",
       description: [
-        "A responsive personal portfolio website to showcase projects, skills, and experience.",
-        "Built with modern web technologies."
+        "A project I completed with classmates, applying a metaheuristic algorithm to determine the optimal route for visiting one of Valencia’s largest festivals. The project generated media interest and was covered by several newspapers"
       ],
-      technologies: ["React", "Tailwind CSS", "TypeScript", "Vercel"],
-      githubLink: "https://github.com/johndoe/portfolio",
-      liveLink: "https://www.johndoe.com",
+      technologies: ["Python"],
+      liveLink: "https://www.larazon.es/comunidad-valenciana/esta-ruta-perfecta-ver-fallas-seccion-especial-valencia_2024031665f5647e9e2a440001232c58.html",
     },
     {
       title: "Image Classifier Development",
-      duration: "Feb 2023 - Present",
+      duration: "Feb 2024 - Present",
       description: [
         "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance.",
         "Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased.",
@@ -132,13 +130,18 @@ export const cvData = {
       technologies: ["Python", "Rstudio", "MySQL", "MongoDB"],
     },
     {
-      title: "Task Management App",
+      title: "Fish Image Analysis and Feature Extraction",
       description: [
-        "A collaborative task management application allowing users to create, assign, and track tasks within teams."
+        "This part of the project focused on descriptive analysis of fish images, applying the Prats-Ferrer and Bharati-MacGregor approaches across all three color channels. Textural transforms were used to extract relevant features, capturing structural and surface patterns of the specimen. Feature selection prioritized the most informative variables to feed into unsupervised defect detection using MSPC, enabling anomaly identification without labeled data. The workflow combined rigorous statistical methods with practical image analysis to characterize fish morphology and detect subtle defects."
       ],
-      technologies: ["React", "Firebase", "Chakra UI", "TypeScript"],
-      githubLink: "https://github.com/johndoe/task-manager",
-      liveLink: "https://taskmanager.johndoe.com",
+      technologies: ["Rstudio", "Matlab"],
     },
+    {
+      title: "Hyperspectral Image Analysis in Pharmaceutical Compounds",
+      description: [
+        "This project is focused on hyperspectral imaging for pharmaceutical analysis, aiming to separate pure compounds from excipients in drug formulations. Three compounds were analyzed: HPMC (Hydroxypropyl Methylcellulose), Griseofulvin (GRISE), and their combination (COMB), across 121 wavelengths. Preprocessing included Standard Normal Variate (SNV) scaling to standardize pixel variance and Savitzky-Golay filtering (polynomial order 2, window size 13) to smooth spectral data. Multivariate Curve Resolution (MCR) and Principal Component Analysis (PCA) were applied using the Prats-Ferrer approach to generate distribution maps of pure spectra. Data visualization converted complex 3D spectral information into clear 2D maps, with distinct colors assigned to each compound."
+      ],
+      technologies: ["Matlab"]
+    }
   ],
 };
