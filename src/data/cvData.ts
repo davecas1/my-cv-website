@@ -101,6 +101,14 @@ export const cvData = {
   },
   projects: [
     {
+      title: "Volatilty estimation website",
+      description: [
+        "A website that allows users to estimate the daily volatility of any IBEX 35 company using GARCH or Stochastic Volatility models. The site is fully developed in Shiny for R"
+      ],
+      technologies: ["Rstudio", "Shiny"], // Fixed the missing double quote here
+      liveLink: "https://davidveloso.shinyapps.io/estimacin_volatilidad/",
+    },
+    {
       title: "Personal Portfolio Website",
       description: [
         "A responsive personal portfolio website to showcase projects, skills, and experience.",
@@ -112,7 +120,7 @@ export const cvData = {
     },
     {
       title: "Image Classifier Development",
-      duration: "Feb 2023 - Present", // Added duration
+      duration: "Feb 2023 - Present",
       description: [
         "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance.",
         "Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased.",
