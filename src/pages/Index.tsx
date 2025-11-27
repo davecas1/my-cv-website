@@ -43,7 +43,7 @@ const Index: React.FC = () => {
           <Section title="Skills">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
-                <div key={category} className="bg-muted p-4 rounded-lg shadow-sm">
+                <div key={category} className="bg-card/80 p-4 rounded-lg shadow-sm">
                   <h3 className="text-lg font-semibold mb-3 capitalize text-muted-foreground">
                     {category}
                   </h3>

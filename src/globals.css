@@ -13,8 +13,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 30% 20%; /* Dark slate blue */
+    --primary-foreground: 210 40% 98%; /* White */
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -49,6 +49,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --skill-advanced: 140 40% 85%; /* Light green */
+    --skill-advanced-foreground: 140 40% 20%; /* Dark green text */
+    --skill-intermediate: 200 40% 85%; /* Light blue */
+    --skill-intermediate-foreground: 200 40% 20%; /* Dark blue text */
+    --skill-beginner: 40 40% 85%; /* Light yellow */
+    --skill-beginner-foreground: 40 40% 20%; /* Dark yellow text */
   }
 
   .dark {
@@ -61,8 +68,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 40% 98%; /* White */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark text */
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -87,6 +94,13 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --skill-advanced: 140 40% 30%; /* Darker green */
+    --skill-advanced-foreground: 140 40% 90%; /* Light green text */
+    --skill-intermediate: 200 40% 30%; /* Darker blue */
+    --skill-intermediate-foreground: 200 40% 90%; /* Light blue text */
+    --skill-beginner: 40 40% 30%; /* Darker yellow */
+    --skill-beginner-foreground: 40 40% 90%; /* Light yellow text */
   }
 }
 
@@ -96,7 +110,7 @@
   }
 
   body {
-    @apply text-foreground; /* Removed bg-background */
+    @apply text-foreground;
     background-image: url('https://images.unsplash.com/photo-1518655292271-ac2f950dd972?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;

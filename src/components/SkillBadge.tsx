@@ -9,9 +9,9 @@ interface SkillBadgeProps {
 
 const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, level }) => {
   const levelClasses = {
-    advanced: "bg-green-600 hover:bg-green-700 text-white",
-    intermediate: "bg-blue-600 hover:bg-blue-700 text-white",
-    beginner: "bg-yellow-500 hover:bg-yellow-600 text-gray-900",
+    advanced: "bg-skillAdvanced text-skillAdvanced-foreground",
+    intermediate: "bg-skillIntermediate text-skillIntermediate-foreground",
+    beginner: "bg-skillBeginner text-skillBeginner-foreground",
   };
 
   return (

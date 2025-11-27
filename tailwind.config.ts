@@ -62,6 +62,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        skillAdvanced: {
+          DEFAULT: "hsl(var(--skill-advanced))",
+          foreground: "hsl(var(--skill-advanced-foreground))",
+        },
+        skillIntermediate: {
+          DEFAULT: "hsl(var(--skill-intermediate))",
+          foreground: "hsl(var(--skill-intermediate-foreground))",
+        },
+        skillBeginner: {
+          DEFAULT: "hsl(var(--skill-beginner))",
+          foreground: "hsl(var(--skill-beginner-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
