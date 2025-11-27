@@ -6,10 +6,11 @@ import { Github, ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
-  description: string[]; // Changed to string array
+  description: string[];
   technologies: string[];
   githubLink?: string;
   liveLink?: string;
+  duration?: string; // Added duration prop
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -18,12 +19,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   githubLink,
   liveLink,
+  duration, // Destructure duration
 }) => {
   return (
     <Card className="flex flex-col h-full bg-card/80 border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
-        {/* Render description as a list */}
+        {duration && ( // Display duration if it exists
+          <CardDescription className="text-muted-foreground mt-1">
+            {duration}
+          </CardDescription>
+        )}
         <ul className="list-disc pl-5 text-muted-foreground mt-2">
           {description.map((item, index) => (
             <li key={index} className="mb-1">

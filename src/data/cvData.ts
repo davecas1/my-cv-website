@@ -112,6 +112,7 @@ export const cvData = {
     },
     {
       title: "Image Classifier Development",
+      duration: "Feb 2023 - Present", // Added duration
       description: [
         "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance.",
         "Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased.",
