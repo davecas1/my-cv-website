@@ -1,10 +1,5 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 interface LanguageBadgeProps {
   language: string;
@@ -13,16 +8,9 @@ interface LanguageBadgeProps {
 
 const LanguageBadge: React.FC<LanguageBadgeProps> = ({ language, level }) => {
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <Badge variant="secondary" className="text-sm px-3 py-1 rounded-full cursor-help">
-          {language}
-        </Badge>
-      </TooltipTrigger>
-      <TooltipContent sideOffset={5} className="z-[9999] bg-red-500 text-white p-2 rounded shadow-lg">
-        <p>{level}</p>
-      </TooltipContent>
-    </Tooltip>
+    <Badge variant="secondary" className="text-sm px-3 py-1 rounded-full">
+      {language} ({level})
+    </Badge>
   );
 };
 

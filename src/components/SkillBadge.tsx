@@ -1,11 +1,6 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils"; // Import cn utility
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 interface SkillBadgeProps {
   skill: string;
@@ -23,21 +18,14 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, level }) => {
   const displayLevel = level.charAt(0).toUpperCase() + level.slice(1);
 
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <Badge
-          className={cn(
-            "text-sm px-3 py-1 rounded-full transition-colors duration-200 cursor-help",
-            levelClasses[level]
-          )}
-        >
-          {skill}
-        </Badge>
-      </TooltipTrigger>
-      <TooltipContent sideOffset={5} className="z-[9999] bg-red-500 text-white p-2 rounded shadow-lg">
-        <p>{displayLevel}</p>
-      </TooltipContent>
-    </Tooltip>
+    <Badge
+      className={cn(
+        "text-sm px-3 py-1 rounded-full transition-colors duration-200",
+        levelClasses[level]
+      )}
+    >
+      {skill} ({displayLevel})
+    </Badge>
   );
 };
 
