@@ -5,12 +5,12 @@ import Section from "@/components/Section";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard";
 import SkillBadge from "@/components/SkillBadge";
-import LanguageBadge from "@/components/LanguageBadge"; // Import the new LanguageBadge component
+import LanguageBadge from "@/components/LanguageBadge";
 import Footer from "@/components/Footer";
-import { MadeWithDyad } from "@/components/made-with-dyad";
+// Removed: import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index: React.FC = () => {
-  const { summary, experience, education, skills, projects, languages } = cvData; // Destructure languages
+  const { summary, experience, education, skills, projects, languages } = cvData;
 
   return (
     <div className="min-h-screen text-foreground">
@@ -36,7 +36,7 @@ const Index: React.FC = () => {
                 company={edu.institution}
                 duration={edu.duration}
                 description={[edu.description]}
-                technologies={[]} // Education typically doesn't have technologies in the same way as work experience
+                technologies={[]}
               />
             ))}
           </Section>
@@ -78,7 +78,7 @@ const Index: React.FC = () => {
         </main>
 
         <Footer />
-        <MadeWithDyad />
+        {/* Removed: <MadeWithDyad /> */}
       </div>
     </div>
   );
