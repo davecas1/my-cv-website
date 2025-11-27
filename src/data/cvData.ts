@@ -100,7 +100,7 @@ export const cvData = {
     ],
   },
   languages: [
-    { name: "English", level: "B2" },
+    { name: "English", level: "C1" },
     { name: "Italian", level: "B2" },
     { name: "Spanish", level: "Native" },
     { name: "Catalan", level: "Native" },
@@ -120,7 +120,7 @@ export const cvData = {
         "A project I completed with classmates, applying a metaheuristic algorithm to determine the optimal route for visiting one of Valencia’s largest festivals. The project generated media interest and was covered by several newspapers"
       ],
       technologies: ["Python"],
-      liveLink: "https://www.larazon.es/comunidad-valenciana/esta-ruta-perfecta-ver-fallas-seccion-especial-valencia_2024031665f5647e9e2a440001232c58.html",
+      liveLink: "https://www.larazon.es/comunidad-valencia/esta-ruta-perfecta-ver-fallas-seccion-especial-valencia_2024031665f5647e9e2a440001232c58.html",
     },
     {
       title: "Image Classifier Development",
