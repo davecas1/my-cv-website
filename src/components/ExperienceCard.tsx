@@ -18,7 +18,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   technologies,
 }) => {
   return (
-    <Card className="mb-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+    <Card className="mb-6 bg-card/80 border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
         <CardDescription className="text-muted-foreground">

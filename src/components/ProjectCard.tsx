@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveLink,
 }) => {
   return (
-    <Card className="flex flex-col h-full shadow-sm hover:shadow-md transition-shadow duration-200">
+    <Card className="flex flex-col h-full bg-card/80 border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
         <CardDescription className="text-muted-foreground">
