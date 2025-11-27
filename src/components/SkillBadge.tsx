@@ -14,9 +14,6 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, level }) => {
     beginner: "bg-skillBeginner text-skillBeginner-foreground",
   };
 
-  // Capitalize the first letter of the level for display
-  const displayLevel = level.charAt(0).toUpperCase() + level.slice(1);
-
   return (
     <Badge
       className={cn(
@@ -24,7 +21,7 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, level }) => {
         levelClasses[level]
       )}
     >
-      {skill} ({displayLevel})
+      {skill}
     </Badge>
   );
 };
