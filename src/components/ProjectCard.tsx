@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   duration,
 }) => {
   return (
-    <Card className="flex flex-col h-full bg-card/80 border-none shadow-none">
+    <Card className="flex flex-col h-full bg-card/80 border-none shadow-sm hover:shadow-lg hover:scale-[1.01] transition-all duration-300">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
         {duration && (

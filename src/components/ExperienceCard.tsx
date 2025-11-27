@@ -18,7 +18,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   technologies,
 }) => {
   return (
-    <Card className="mb-6 bg-card/80 border-none shadow-none">
+    <Card className="mb-6 bg-card/80 border-none shadow-sm hover:shadow-lg hover:scale-[1.01] transition-all duration-300">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
         <CardDescription className="text-muted-foreground">
