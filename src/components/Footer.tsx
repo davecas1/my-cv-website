@@ -1,4 +1,5 @@
 import React from "react";
+import { cvData } from "@/data/cvData"; // Added this import
 
 const Footer: React.FC = () => {
   return (
