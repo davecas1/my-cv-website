@@ -99,6 +99,12 @@ export const cvData = {
       { name: "Minitab", level: "advanced" },
     ],
   },
+  languages: [
+    { name: "English", level: "B2" },
+    { name: "Italian", level: "B2" },
+    { name: "Spanish", level: "Native" },
+    { name: "Catalan", level: "Native" },
+  ],
   projects: [
     {
       title: "IBEX 35 Volatility Analysis Tool",
