@@ -19,7 +19,7 @@ const LanguageBadge: React.FC<LanguageBadgeProps> = ({ language, level }) => {
           {language}
         </Badge>
       </TooltipTrigger>
-      <TooltipContent>
+      <TooltipContent className="bg-black text-white p-2 rounded shadow-lg">
         <p>{level}</p>
       </TooltipContent>
     </Tooltip>

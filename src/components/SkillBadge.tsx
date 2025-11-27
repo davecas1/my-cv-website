@@ -34,7 +34,7 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, level }) => {
           {skill}
         </Badge>
       </TooltipTrigger>
-      <TooltipContent>
+      <TooltipContent className="bg-black text-white p-2 rounded shadow-lg">
         <p>{displayLevel}</p>
       </TooltipContent>
     </Tooltip>
