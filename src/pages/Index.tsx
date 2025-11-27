@@ -7,7 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 import SkillBadge from "@/components/SkillBadge";
 import LanguageBadge from "@/components/LanguageBadge";
 import Footer from "@/components/Footer";
-// Removed: import { MadeWithDyad } from "@/components/made-with-dyad";
+import SkillLegend from "@/components/SkillLegend"; // Nueva importación
 
 const Index: React.FC = () => {
   const { summary, experience, education, skills, projects, languages } = cvData;
@@ -42,6 +42,7 @@ const Index: React.FC = () => {
           </Section>
 
           <Section title="Skills">
+            <SkillLegend /> {/* Aquí se añade la leyenda */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
                 <div key={category} className="bg-card/80 p-4 rounded-lg shadow-sm">
@@ -78,7 +79,6 @@ const Index: React.FC = () => {
         </main>
 
         <Footer />
-        {/* Removed: <MadeWithDyad /> */}
       </div>
     </div>
   );
