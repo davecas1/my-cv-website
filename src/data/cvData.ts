@@ -1,27 +1,26 @@
 export const cvData = {
-  personalInfo: {
-    name: "John Doe", // <--- Change "John Doe" to your name
-    title: "Full Stack Developer",
-    email: "john.doe@example.com",
-    phone: "+1 (123) 456-7890",
-    location: "San Francisco, CA",
-    linkedin: "https://www.linkedin.com/in/johndoe",
-    github: "https://github.com/johndoe",
-    website: "https://www.johndoe.com", // Optional
+  personalInfo: { // Added missing '{' here
+    name: "David Veloso Castelló",
+    title: "Data Scientist and Machine Learning Engineer",
+    email: "davidvelosocastello@gmail.com",
+    phone: "+34 661 883 905 and +39 351 444 0139",
+    location: "Valencia, Spain",
+    linkedin: "https://www.linkedin.com/in/davecas1",
+    github: "https://github.com/davecas1",
   },
   summary:
-    "Highly motivated and results-oriented Full Stack Developer with 5+ years of experience in building and deploying scalable web applications. Proficient in React, Node.js, and various database technologies. Passionate about creating intuitive user experiences and writing clean, efficient code.",
+    "Background in business administration with graduate-level training in data analysis, process optimization, and decision science. Research experience at Politecnico di Milano in Enrico Zio’s laboratory, operating advanced simulation frameworks. Thesis work in volatility extended into market risk dynamics. Technical base in stochastic-volatility models, GARCH-type structures, statistical inference, and machine-learning methods for fintech and quantitative risk. Output centers on building and refining models while integrating economic mechanisms to maintain decision relevance.",
   experience: [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
-      duration: "Jan 2022 - Present",
+      title: "Researcher Assistant",
+      company: "Politecnico di Milano.",
+      duration: "Feb 2025 - Aug 2025",
       description: [
         "Led the development of a new customer relationship management (CRM) platform using React, Node.js, and PostgreSQL.",
         "Implemented robust API endpoints and integrated third-party services, improving data synchronization by 30%.",
         "Mentored junior developers and conducted code reviews, fostering a collaborative team environment.",
       ],
-      technologies: ["React", "Node.js", "PostgreSQL", "TypeScript", "AWS"],
+      technologies: ["Matlab", "R"],
     },
     {
       title: "Software Developer",
