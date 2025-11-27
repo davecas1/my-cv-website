@@ -10,7 +10,7 @@ interface ProjectCardProps {
   technologies: string[];
   githubLink?: string;
   liveLink?: string;
-  duration?: string; // Added duration prop
+  duration?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,13 +19,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   githubLink,
   liveLink,
-  duration, // Destructure duration
+  duration,
 }) => {
   return (
     <Card className="flex flex-col h-full bg-card/80 border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
-        {duration && ( // Display duration if it exists
+        {duration && (
           <CardDescription className="text-muted-foreground mt-1">
             {duration}
           </CardDescription>
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {liveLink && (
           <Button asChild variant="ghost" size="sm">
             <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
-              <ExternalLink className="h-4 w-4" /> Live Demo
+              <ExternalLink className="h-4 w-4" /> Website
             </a>
           </Button>
         )}
