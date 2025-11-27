@@ -1,5 +1,5 @@
 export const cvData = {
-  personalInfo: { // Added missing '{' here
+  personalInfo: {
     name: "David Veloso Castelló",
     title: "Data Scientist and Machine Learning Engineer",
     email: "davidvelosocastello@gmail.com",
@@ -91,7 +91,7 @@ export const cvData = {
       { name: "ETL", level: "beginner" },
       { name: "Power BI", level: "intermediate" },
     ],
-  ],
+  }, // Changed ']' to '}' here
   projects: [
     {
       title: "Personal Portfolio Website",
