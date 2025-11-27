@@ -49,7 +49,7 @@ const Index: React.FC = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {skillList.map((skill, index) => (
-                      <SkillBadge key={index} skill={skill} />
+                      <SkillBadge key={index} skill={skill.name} level={skill.level} />
                     ))}
                   </div>
                 </div>

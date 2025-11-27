@@ -50,11 +50,48 @@ export const cvData = {
     },
   ],
   skills: {
-    frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Redux", "Next.js"],
-    backend: ["Node.js", "Express.js", "Python", "Django", "REST APIs", "GraphQL"],
-    databases: ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
-    devops: ["Docker", "AWS", "Vercel", "Git", "CI/CD"],
-    tools: ["Jira", "Figma", "VS Code"],
+    frontend: [
+      { name: "React", level: "advanced" },
+      { name: "TypeScript", level: "advanced" },
+      { name: "JavaScript", level: "advanced" },
+      { name: "HTML", level: "advanced" },
+      { name: "CSS", level: "advanced" },
+      { name: "Tailwind CSS", level: "advanced" },
+      { name: "Redux", level: "intermediate" },
+      { name: "Next.js", level: "intermediate" },
+    ],
+    backend: [
+      { name: "Node.js", level: "advanced" },
+      { name: "Express.js", level: "advanced" },
+      { name: "Python", level: "intermediate" },
+      { name: "Django", level: "beginner" },
+      { name: "REST APIs", level: "advanced" },
+      { name: "GraphQL", level: "intermediate" },
+    ],
+    databases: [
+      { name: "PostgreSQL", level: "advanced" },
+      { name: "MongoDB", level: "intermediate" },
+      { name: "MySQL", level: "intermediate" },
+      { name: "Redis", level: "beginner" },
+    ],
+    devops: [
+      { name: "Docker", level: "intermediate" },
+      { name: "AWS", level: "intermediate" },
+      { name: "Vercel", level: "advanced" },
+      { name: "Git", level: "advanced" },
+      { name: "CI/CD", level: "intermediate" },
+    ],
+    tools: [
+      { name: "Jira", level: "advanced" },
+      { name: "Figma", level: "intermediate" },
+      { name: "VS Code", level: "advanced" },
+    ],
+    data: [ // New category for data-related skills
+      { name: "SQL", level: "advanced" },
+      { name: "Data Analysis", level: "intermediate" },
+      { name: "ETL", level: "beginner" },
+      { name: "Power BI", level: "intermediate" },
+    ],
   },
   projects: [
     {
