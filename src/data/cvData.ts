@@ -102,22 +102,31 @@ export const cvData = {
   projects: [
     {
       title: "Personal Portfolio Website",
-      description:
-        "A responsive personal portfolio website to showcase projects, skills, and experience. Built with modern web technologies.",
+      description: [
+        "A responsive personal portfolio website to showcase projects, skills, and experience.",
+        "Built with modern web technologies."
+      ],
       technologies: ["React", "Tailwind CSS", "TypeScript", "Vercel"],
       githubLink: "https://github.com/johndoe/portfolio",
       liveLink: "https://www.johndoe.com",
     },
     {
       title: "Image Classifier Development",
-      description:
-        "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance. Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased. Utilized data augmentation techniques to increase model robustness, reducing overfitting and improving generalization. Visualized the model’s performance and analysis results using ggplot2 and matplotlib, providing insightful data for further improvements. Integrated OpenCV for image preprocessing, enhancing image quality and ensuring accurate classification. Leveraged R libraries like caret and pls for additional data analysis and model validation.",
+      description: [
+        "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance.",
+        "Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased.",
+        "Utilized data augmentation techniques to increase model robustness, reducing overfitting and improving generalization.",
+        "Visualized the model’s performance and analysis results using ggplot2 and matplotlib, providing insightful data for further improvements.",
+        "Integrated OpenCV for image preprocessing, enhancing image quality and ensuring accurate classification.",
+        "Leveraged R libraries like caret and pls for additional data analysis and model validation.",
+      ],
       technologies: ["Python", "Rstudio", "MySQL", "MongoDB"],
     },
     {
       title: "Task Management App",
-      description:
-        "A collaborative task management application allowing users to create, assign, and track tasks within teams.",
+      description: [
+        "A collaborative task management application allowing users to create, assign, and track tasks within teams."
+      ],
       technologies: ["React", "Firebase", "Chakra UI", "TypeScript"],
       githubLink: "https://github.com/johndoe/task-manager",
       liveLink: "https://taskmanager.johndoe.com",

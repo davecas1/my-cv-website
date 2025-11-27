@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  description: string[]; // Changed to string array
   technologies: string[];
   githubLink?: string;
   liveLink?: string;
@@ -23,9 +23,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <Card className="flex flex-col h-full bg-card/80 border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
-        <CardDescription className="text-muted-foreground">
-          {description}
-        </CardDescription>
+        {/* Render description as a list */}
+        <ul className="list-disc pl-5 text-muted-foreground mt-2">
+          {description.map((item, index) => (
+            <li key={index} className="mb-1">
+              {item}
+            </li>
+          ))}
+        </ul>
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="flex flex-wrap gap-2">
@@ -38,14 +43,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </CardContent>
       <CardFooter className="flex flex-wrap gap-2 pt-4">
         {githubLink && (
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="ghost" size="sm">
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
               <Github className="h-4 w-4" /> GitHub
             </a>
           </Button>
         )}
         {liveLink && (
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="ghost" size="sm">
             <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
               <ExternalLink className="h-4 w-4" /> Live Demo
             </a>
