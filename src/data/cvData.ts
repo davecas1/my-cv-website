@@ -1,6 +1,6 @@
 export const cvData = {
   personalInfo: {
-    name: "John Doe",
+    name: "John Doe", // <--- Change "John Doe" to your name
     title: "Full Stack Developer",
     email: "john.doe@example.com",
     phone: "+1 (123) 456-7890",
@@ -92,7 +92,7 @@ export const cvData = {
       { name: "ETL", level: "beginner" },
       { name: "Power BI", level: "intermediate" },
     ],
-  },
+  ],
   projects: [
     {
       title: "Personal Portfolio Website",
