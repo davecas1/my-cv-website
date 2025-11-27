@@ -12,7 +12,7 @@ const Index: React.FC = () => {
   const { summary, experience, education, skills, projects } = cvData;
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 text-foreground">
+    <div className="min-h-screen text-foreground">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
         <Header />
 
