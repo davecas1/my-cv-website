@@ -39,16 +39,22 @@ export const cvData = {
   ],
   education: [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "University of Technology",
-      duration: "Sep 2017 - May 2019",
-      description: "Specialized in Distributed Systems and Artificial Intelligence.",
+      degree: "Master’s Degree in Data Analysis, Process Improvement and Decision Support Engineering",
+      institution: "Universidad Politécnica de Valencia",
+      duration: "Sep 2023 - Sep 2025",
+      description: "Specialized in Machine Learning and volatility/risk modeling for econometric applications",
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "State University",
-      duration: "Sep 2013 - May 2017",
-      description: "Graduated with honors.",
+      degree: "Bachelor's Degree in Business Administration and Management",
+      institution: "Universidad Politécnica de Valencia",
+      duration: "Sep 2018 - Jun 2022",
+      description: "Specialized in Information Systems.",
+    },
+    {
+      degree: "Web Application development",
+      institution: "Labora",
+      duration: "Dec 2022 - Aug 2023",
+      description: "I learned JavaScript, TypeScript, React, Node.js, CSS, HTML and PHP",
     },
   ],
   skills: {
@@ -64,6 +70,7 @@ export const cvData = {
       { name: "Node.js", level: "beginner" },
       { name: "Python", level: "intermediate" },
       { name: "Django", level: "beginner" },
+      { name: "PHP", level : "intermediate"}
     ],
     databases: [
       { name: "PostgreSQL", level: "beginner" },
@@ -102,12 +109,10 @@ export const cvData = {
       liveLink: "https://www.johndoe.com",
     },
     {
-      title: "E-commerce Platform",
+      title: "Image Classifier Development",
       description:
-        "Developed a full-stack e-commerce application with user authentication, product listings, shopping cart, and payment integration.",
-      technologies: ["Next.js", "Node.js", "Stripe API", "MongoDB", "Redux"],
-      githubLink: "https://github.com/johndoe/ecommerce-platform",
-      liveLink: "https://ecommerce.johndoe.com",
+        "Applied Principal Component Analysis (PCA) and Partial Least Squares (PLS) for dimensionality reduction and feature extraction from plant leaf images, improving the model's efficiency and performance. Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify images of plant leaves as either healthy or diseased. Utilized data augmentation techniques to increase model robustness, reducing overfitting and improving generalization. Visualized the model’s performance and analysis results using ggplot2 and matplotlib, providing insightful data for further improvements. Integrated OpenCV for image preprocessing, enhancing image quality and ensuring accurate classification. Leveraged R libraries like caret and pls for additional data analysis and model validation.",
+      technologies: ["Python", "Rstudio", "MySQL", "MongoDB"],
     },
     {
       title: "Task Management App",
